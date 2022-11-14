@@ -1,1 +1,129 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Buger Pub</title>
+       <meta charset="utf-8"/>
+   </head>
+   <body>
+        <header>
+        <h1>
+            Välkommen till Burger Pub!
+        </h1>
+        </header>
+        <hr>
+
+        <nav>
+        <h2>
+            Välj din burgare:
+        </h2>
+        </nav>
+        Klicka på den burgaren som du vill ha. 
+
+            <div style="display: inline-block;">
+                <section>
+                    <h3>
+                        En ostburgare
+                    </h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tqrowvHm-4VGUmo-ujvscWjMN4p3K090Ag&usqp=CAU" style="width: 300px;">
+
+                    <ul>
+                        <li> 500 kCal</li>
+                        <li> Innehåller Gluten</li>
+                        <li> Innehåller Lactos</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div style="display: inline-block;">
+                <section>
+                    <h3>
+                        En bacon- och ostburgare
+                    </h3>
+                    <img src="https://boltis.files.wordpress.com/2020/04/20200419_180551-01.jpeg" style="width: 200px;">
+                    <ul>
+                        <li> 500 kCal</li>
+                        <li> Innehåller Gluten</li>
+                        <li> Innehåller Lactos</li>
+                    </ul>
+                </section>
+            </div>
+        
+        <hr>
+
+        <h2>
+            Information:
+        </h2>
+        Fyll in din information här nedan. Fyll även i allergier om du har några.
+        
+        <section id="contact">
+            <form>
+                <fieldset>
+                    <h4> Leverans information:</h4>
+                    <p>
+                        <label for="Fulltname">Full name</label><br>
+                        <input type="text" id="fullname" name="fn" required="required" placeholder="First and Last name">
+                    </p>
+
+                    <p>
+                        <label for="E-mail">E-mail</label><br>
+                        <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                    </p>
+
+                    <p>
+                        <label for="Street"> Street</label><br>
+                        <input type="text" id="street" name="sn" required="required" placeholder="Street name">
+                    </p>
+
+                    <p>
+                        <label for="House number"> House number</label><br>
+                        <input type="number" id="housenumber" name="hn" required="required" placeholder="House number">
+                    </p>
+                        
+                    <h4>Betalnings information:</h4>
+                    <p>
+                        <label for="Payment">Choose payment method: </label><br>
+                        <select id="payment" name="pmm">
+                            <option>Card</option>
+                            <option>Swish</option>
+                            <option>Klarna</option>
+                            <option>Paypal</option>
+                            <option>Your life</option>
+                        </select>
+                    </p>
+                         
+                    <h4>Övrigt:</h4>
+                    <label for="Gender">Choose your gender:</label><bl>
+                    <p>
+                        <input type="radio" id="Male" name="gender">
+                        <label for="Male">Male</label><be>
+                        <input type="radio" id="Female" name="gender">
+                        <label for="Female">Female</label><be>
+                        <input type="radio" id="Dont" name="gender" checked="checked">
+                        <label for="Dont">Do not wish to provide</label><be>
+                        </p>
+
+
+                    <p>
+                        <label for="Allergies">Do we need to know something:</label><br>
+                        <textarea id="allergies" name="ag" cols="50" rows="10"> </textarea>
+                    </p>
+
+                </fieldset>
+
+
+
+            </form>
+        </section>
+
+        <button type="submit">
+            <img src="data:image/png;base64,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" style="width: 30px;">
+            Skicka din beställning 
+        </button>
+
+        <hr>
+        <footer>
+            Ge mig dina pengar!!!
+        </footer>
+
+    </body>
+</html>
