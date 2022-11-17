@@ -1,1 +1,106 @@
-/*empty*/
+@import 'https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Ubuntu&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Nunito&display=swap';
+
+
+body {
+    font-family: "Rubik Bubbles";
+    background-color: #acdbe3;
+
+}
+
+
+
+
+
+.headerText{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    
+    color: rgb(153, 7, 7);
+    margin-top: -85px;
+    
+
+}
+
+
+.header{
+    position:relative;
+    opacity: 0.5;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    
+    
+}
+
+/*.div1{
+    background-color: aliceblue;
+    
+}
+.div2{
+    background-color: rgb(170, 212, 248);
+    
+}
+.div3{
+    background-color: rgb(207, 229, 249);
+    
+}*/
+
+
+
+
+#allergies{
+    color: rgb(153, 7, 7);
+    font-weight: bold;
+}
+
+/*#food{
+    padding: 10px;
+    margin: 15px 0px 15px 50px;
+    border: 3px solid black;
+    display: inline-block;
+}*/
+
+
+#order{
+    margin-top: 15px;
+    border: 15px dotted gold;
+    background-color: aquamarine;
+    font-family: "Ubuntu";
+    
+
+}
+
+.description{
+    margin-left: 10px;
+}
+
+#contact{
+    margin-top: 15px;
+    border: 15px dotted gold;
+    background-color: rgb(0, 255, 183);
+    font-family: "Nunito";
+    
+}
+
+#button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    color: green;
+    cursor: pointer;
+ }
+
+
+ #footerText{
+    font-size: small;
+ }
+ 
