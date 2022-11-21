@@ -2,9 +2,17 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          #{{ key }} {{order.customer.fullName}}: 
+          <div v-for="(amount,name) in order.orderItems" v-bind:key="'key'+key+name">
+            {{amount}} of {{name}}
         </div>
-        <button v-on:click="clearQueue">Clear Queue</button>
+        <div v-bind:style="{color:'gray'}"> 
+              {{order.customer.fullName}}
+              ({{order.customer.email}}, {{order.customer.payment}}, {{order.customer.gender}})'
+        </div>
+      </div>
+        
+      <button v-on:click="clearQueue">Clear Queue</button>
       </div>
       <div id="dots" v-bind:style="{ background: 'url(' + require('../../public/img/polacks.jpg')+ ')' }">
           <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
@@ -12,7 +20,8 @@
           </div>
       </div>
     </div>
-  </template>
+</template>
+
   <script>
   import io from 'socket.io-client'
   const socket = io();
@@ -31,10 +40,12 @@
     methods: {
       clearQueue: function () {
         socket.emit('clearQueue');
-      }
+      },
+      
     }
   }
   </script>
+
   <style>
   #orderList {
     top:1em;
