@@ -5,7 +5,7 @@
       <img src="https://media.istockphoto.com/id/1355628976/sv/foto/pattern-with-classic-cheeseburger-french-fries-and-soda-drink-on-orange-and-blue-background.jpg?s=612x612&w=0&k=20&c=i5FGKOqaDGgXUXWKi5fgcpTRhN2V1qGdXtyz2phMW6s=" style="width: 100%;">
     </div>
 
-    <h1 class="headerText" style="width: 100%;">
+    <h1 class="headerText">
       Välkommen till Burger Pub!
     </h1>
   </header>
@@ -312,8 +312,10 @@ body {
     text-align: center;
     
     color: rgb(153, 7, 7);
-    font-size: 50px;
-    margin-top: -220px;
+    font-size: 6vw;
+    margin-top:-300px;
+    
+   
 
 }
 
@@ -394,10 +396,11 @@ button:hover {
  
 
 
- @media screen and (max-width: 900px){
+ @media screen and (max-width: 1000px){
     .headerText{
+        position:fixed;
         font-size: 6vw;
-        margin-top: -120px;
+        margin-top: -220px;
     }
 
 
