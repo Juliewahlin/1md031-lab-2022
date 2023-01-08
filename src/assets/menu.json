@@ -1,0 +1,31 @@
+
+[
+    {
+      "name": "Ostburgare",
+      "kCal": 550,
+      "lactose": true,
+      "gluten": true,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tqrowvHm-4VGUmo-ujvscWjMN4p3K090Ag&usqp=CAU",
+      "orderedBurgers":0
+      
+    },
+    
+    {
+        "name": "Bacon- och ostburgare",
+        "kCal": 750,
+        "lactose": true,
+        "gluten": false,
+        "url":"https://media.istockphoto.com/id/182436877/sv/foto/bacon-cheesburger.jpg?s=612x612&w=0&k=20&c=26WWvcaoFtz9z_RuykQE7y88jIxGOZWnReFl8QDdWa4=",
+        "orderedBurgers":0
+    },
+
+    {
+        "name": "Pommes",
+        "kCal": 250,
+        "lactose": false,
+        "gluten": false,
+        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqie2XigoVvrmXII3u098fmFZOfJsSatMvTQ&usqp=CAU",
+        "orderedBurgers":0
+    }
+
+  ]
